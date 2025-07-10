@@ -46,7 +46,7 @@ A web-based Service Desk platform allowing users to register, log in, and raise 
 ```js
 PORT=5000
 
-PORT=5000
+
 MONGO_URI=
 JWT_SECRET=
 
