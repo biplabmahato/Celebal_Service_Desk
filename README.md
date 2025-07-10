@@ -37,30 +37,34 @@ A web-based Service Desk platform allowing users to register, log in, and raise 
 
 ---
 
-## 📁 Folder Structure
-service-desk-app/
-├── # React Frontend
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── App.jsx
-│ │ └── ...
-├── Backend/ # Node.js Backend
-│ ├── routes/
-│ ├── models/
-│ ├── controllers/
-│ ├── server.js
-│ └── ...
 
 
 
 
-Setup Backend:
-bash Copy Edit
+### Setup .env file
+
+```js
+PORT=5000
+
+PORT=5000
+MONGO_URI=
+JWT_SECRET=
+
+
+```
+
+### Run the Backend
+
+```shell
 cd Backend
 npm install
 node server.js
+```
 
-Setup Frontend:
-npm install
-npm run dev 
+### Run the frontend
+
+```shell
+npm insatt
+npm run dev
+
+```
