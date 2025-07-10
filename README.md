@@ -1,12 +1,66 @@
-# React + Vite
+# 🛠️ Service Desk Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based Service Desk platform allowing users to register, log in, and raise support tickets for various issues. Admins can manage tickets by assigning, tracking, and resolving them. Built with a focus on responsive UI, seamless UX, and real-time updates.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 👥 User Side
+- User registration and login
+- Raise new support tickets (issue type, priority, description)
+- Track ticket status: Open, In Progress, Resolved
+- Receive updates/notifications
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛠️ Admin Side
+- View all raised tickets
+- Assign tickets to support staff
+- Update ticket status
+- Manage ticket categories and priorities
+
+---
+
+## 🧱 Tech Stack
+
+### 🔹 Frontend
+- React.js
+- Axios
+- Tailwind CSS / Bootstrap (choose based on your UI)
+- React Router
+
+### 🔹 Backend
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- JWT for authentication
+- bcrypt for password hashing
+
+---
+
+## 📁 Folder Structure
+service-desk-app/
+├── # React Frontend
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── App.jsx
+│ │ └── ...
+├── Backend/ # Node.js Backend
+│ ├── routes/
+│ ├── models/
+│ ├── controllers/
+│ ├── server.js
+│ └── ...
+
+
+
+
+Setup Backend:
+bash Copy Edit
+cd Backend
+npm install
+node server.js
+
+Setup Frontend:
+npm install
+npm run dev 
